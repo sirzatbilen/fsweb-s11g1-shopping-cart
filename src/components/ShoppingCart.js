@@ -1,12 +1,17 @@
 import React from "react";
 import { ScCartCheckout } from "./scParts";
+import { useContext } from "react";
 
 // Components
 import Item from "./ShoppingCartItem";
+import { CartContext } from "../contexts/CartContext";
+import { useHistory } from "react-router-dom";
 
-const ShoppingCart = (props) => {
+const ShoppingCart = () => {
+  const history = useHistory();
+  const { cart } = useContext(CartContext);
   const getCartTotal = () => {
-    return props.cart
+    return cart
       .reduce((acc, value) => {
         return acc + value.price;
       }, 0)
@@ -15,13 +20,13 @@ const ShoppingCart = (props) => {
 
   return (
     <div>
-      {props.cart.map((item) => (
+      {cart.map((item) => (
         <Item key={item.id} {...item} />
       ))}
 
       <ScCartCheckout>
         <p>Total: ${getCartTotal()}</p>
-        <button>Checkout</button>
+        <button onClick={() => history.push("/")}>Checkout</button>
       </ScCartCheckout>
     </div>
   );

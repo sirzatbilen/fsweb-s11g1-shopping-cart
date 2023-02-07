@@ -10,11 +10,11 @@ Bu talimatları dikkatlice okuyun. Bu projeye başlamadan önce tam olarak ne be
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [x] Forklayın.
+- [x] Klonlayın
+- [x] Ana dizine gidin
+- [x] `npm install`
+- [x] `npm start`
 
 ### Görev 2: Gereksinimler
 
@@ -145,3 +145,5 @@ MVP'ye ulaşılana kadar esnek problemlere başlamayın.
   Her öğenin bir 'id'si olduğunu unutmayın, bu, removeItem işlevinizi oluştururken çok yardımcı olacaktır!
 
 - `localStorage` Kullanarak Sepet Öğelerini Sürdürülebilir hale getirin. (Bunu denerseniz, ürünlerimizin alışveriş sepetini yenileyerek doldurmasını sağlamak biraz zor olacaktır. Verilerin gerçekte nerede depolandığını ve uygulama bir yenilemeden sonra yeniden yüklenirken localStorage'dan oraya nasıl veri alabileceğinizi düşünmeniz gerekecek. İyi şanslar!)
+
+- Ek olarak "Checkout" tuşu işlevsel hale getirildi
